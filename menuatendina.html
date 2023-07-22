@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu a Tendina</title>
+    <style>
+        /* Stile del menu a tendina */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Menu a Tendina</h1>
+
+    <div class="dropdown">
+        <button>Seleziona una voce</button>
+        <div class="dropdown-content">
+            <a href="#">Voce 1</a>
+            <a href="#">Voce 2</a>
+            <a href="#">Voce 3</a>
+        </div>
+    </div>
+
+    <script>
+        // Aggiungi qui la logica JavaScript, se necessario
+    </script>
+</body>
+</html>
