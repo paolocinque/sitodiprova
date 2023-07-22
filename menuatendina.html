@@ -26,30 +26,27 @@
 <body>
     <h1>Menu a Tendina</h1>
 
-    <div class="dropdown">
-        <button>Seleziona una voce</button>
-        <div class="dropdown-content">
-            <a href="#">Voce 1</a>
-            <a href="#">Voce 2</a>
-            <a href="#">Voce 3</a>
-        </div>
-    </div>
+ <h1>Scegli una delle opzioni:</h1>
+
+    <label for="opzioni">Seleziona:</label>
+    <select id="opzioni">
+        <option value="opzione1">Opzione 1</option>
+        <option value="opzione2">Opzione 2</option>
+        <option value="opzione3">Opzione 3</option>
+        <option value="opzione4">Opzione 4</option>
+    </select>
 
     <p>La tua selezione verrà visualizzata qui:</p>
     <p id="risultato"></p>
 
     <script>
-        // Codice JavaScript per gestire la selezione del menu a tendina
-        const menu = document.querySelector('.dropdown-content');
+        const menu = document.getElementById('opzioni');
         const risultato = document.getElementById('risultato');
 
-        menu.addEventListener('click', function(event) {
-            if (event.target.tagName === 'A') {
-                risultato.textContent = 'Hai selezionato: ' + event.target.textContent;
-            }
+        menu.addEventListener('change', function() {
+            risultato.textContent = 'Hai selezionato: ' + menu.value;
         });
     </script>
-
-    <a href="index.html">Vai a homepage 2</a>
+<a href="index.html">Vai alla Homepage</a>
 </body>
 </html>
