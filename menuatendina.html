@@ -1,52 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Menu a Tendina</title>
-    <style>
-        /* Stile del menu a tendina */
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 100px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-    </style>
+    <title>Pricing Inputs</title>
 </head>
 <body>
-    <h1>Menu a Tendina</h1>
+    <h1>Seleziona gli input e crea la tua polizza in pochi minuti!:</h1>
 
- <h1>Scegli una delle opzioni:</h1>
-
-    <label for="opzioni">Seleziona:</label>
-    <select id="opzioni">
-        <option value="opzione1">Opzione 1</option>
-        <option value="opzione2">Opzione 2</option>
-        <option value="opzione3">Opzione 3</option>
-        <option value="opzione4">Opzione 4</option>
+    <!-- Menu a tendina per l'area geografica -->
+    <label for="areaGeografica">Area Geografica:</label>
+    <select id="areaGeografica">
+        <option value="Nord">Nord</option>
+        <option value="Centro">Centro</option>
+        <option value="Sud">Sud</option>
     </select>
 
-    <p>La tua selezione verrà visualizzata qui:</p>
-    <p id="risultato"></p>
+    <!-- Menu a tendina per la tipologia di miele -->
+    <label for="tipologiaMiele">Tipologia Miele:</label>
+    <select id="tipologiaMiele">
+        <option value="Acacia">Acacia</option>
+        <option value="Millefiori">Millefiori</option>
+    </select>
 
+    <!-- Menu a tendina per il periodo di copertura -->
+    <label for="periodoCopertura">Periodo di Copertura:</label>
+    <select id="periodoCopertura">
+        <!-- Generazione delle combinazioni di intervalli di mesi -->
+        <!-- Marzo -->
+        <option value="Marzo">Marzo</option>
+        <!-- Aprile -->
+        <option value="Marzo">Aprile</option>
+        <!-- Maggio -->
+        <option value="Marzo">Maggio</option>
+        <!-- Giugno -->
+        <option value="Marzo">Giugno</option>
+        <!-- Luglio -->
+        <option value="Marzo">Luglio</option>
+        <!-- Agosto -->
+        <option value="Marzo">Agosto</option>
+        <!-- Settembre -->
+        <option value="Marzo">Settembre</option>
+        <!-- Marzo - Aprile -->
+        <option value="Marzo-Aprile">Marzo - Aprile</option>
+        <!-- Marzo - Maggio -->
+        <option value="Marzo-Maggio">Marzo - Maggio</option>
+        <!-- Marzo - Giugno -->
+        <option value="Marzo-Giugno">Marzo - Giugno</option>
+        <!-- Marzo - Luglio -->
+        <option value="Marzo-Luglio">Marzo - Luglio</option>
+        <!-- Marzo - Agosto -->
+        <option value="Marzo-Agosto">Marzo - Agosto</option>
+        <!-- Marzo - Settembre -->
+        <option value="Marzo-Settembre">Marzo - Settembre</option>
+        <!-- Aprile - Maggio -->
+        <option value="Aprile-Maggio">Aprile - Maggio</option>
+        <!-- Aprile - Giugno -->
+        <option value="Aprile-Giugno">Aprile - Giugno</option>
+        <!-- Aprile - Luglio -->
+        <option value="Aprile-Luglio">Aprile - Luglio</option>
+        <!-- Aprile - Agosto -->
+        <option value="Aprile-Agosto">Aprile - Agosto</option>
+        <!-- Aprile - Settembre -->
+        <option value="Aprile-Settembre">Aprile - Settembre</option>
+        <!-- Maggio - Giugno -->
+        <option value="Maggio-Giugno">Maggio - Giugno</option>
+        <!-- Maggio - Luglio -->
+        <option value="Maggio-Luglio">Maggio - Luglio</option>
+        <!-- Maggio - Agosto -->
+        <option value="Maggio-Agosto">Maggio - Agosto</option>
+        <!-- Maggio - Settembre -->
+        <option value="Maggio-Settembre">Maggio - Settembre</option>
+        <!-- Giugno - Luglio -->
+        <option value="Giugno-Luglio">Giugno - Luglio</option>
+        <!-- Giugno - Agosto -->
+        <option value="Giugno-Agosto">Giugno - Agosto</option>
+        <!-- Giugno - Settembre -->
+        <option value="Giugno-Settembre">Giugno - Settembre</option>
+        <!-- Luglio - Agosto -->
+        <option value="Luglio-Agosto">Luglio - Agosto</option>
+        <!-- Luglio - Settembre -->
+        <option value="Luglio-Settembre">Luglio - Settembre</option>
+        <!-- Agosto - Settembre -->
+        <option value="Agosto-Settembre">Agosto - Settembre</option>
+    </select>
     <script>
-        const menu = document.getElementById('opzioni');
-        const risultato = document.getElementById('risultato');
-
-        menu.addEventListener('change', function() {
-            risultato.textContent = 'Hai selezionato: ' + menu.value;
-        });
+        <a href="index.html">Vai alla Home</a>
     </script>
-<a href="index.html">Vai alla Homepage</a>
+
 </body>
 </html>
