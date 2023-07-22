@@ -35,8 +35,21 @@
         </div>
     </div>
 
+    <p>La tua selezione verrà visualizzata qui:</p>
+    <p id="risultato"></p>
+
     <script>
-       <a href="index.html"> Vai a homepage 2</a>
+        // Codice JavaScript per gestire la selezione del menu a tendina
+        const menu = document.querySelector('.dropdown-content');
+        const risultato = document.getElementById('risultato');
+
+        menu.addEventListener('click', function(event) {
+            if (event.target.tagName === 'A') {
+                risultato.textContent = 'Hai selezionato: ' + event.target.textContent;
+            }
+        });
     </script>
+
+    <a href="index.html">Vai a homepage 2</a>
 </body>
 </html>
