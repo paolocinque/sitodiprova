@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -107,3 +108,114 @@
     </script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pricing Inputs</title>
+</head>
+    <style>
+        body {
+            background-image: url('sfondo.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+        }
+
+    </style>
+<body>
+    <h1>Seleziona gli input e crea la tua polizza in pochi minuti!:</h1>
+
+    <form action="/calcola" method="POST">
+        <p>
+    <!-- Menu a tendina per l'area geografica -->
+           <label for="areaGeografica">Area Geografica:</label>
+           <select id="areaGeografica">
+               <option value="1">Nord</option>
+               <option value="2">Centro</option>
+               <option value="3">Sud</option>
+            </select>
+         <p>
+       <p>
+    <!-- Menu a tendina per la tipologia di miele -->
+    <label for="tipologiaMiele">Tipologia Miele:</label>
+    <select id="tipologiaMiele">
+        <option value="1">Acacia</option>
+        <option value="2">Millefiori</option>
+    </select>
+        <p>
+     <p>
+    <!-- Menu a tendina per il periodo di copertura -->
+    <label for="periodoCopertura">Periodo di Copertura:</label>
+    <select id="periodoCopertura">
+        <!-- Generazione delle combinazioni di intervalli di mesi -->
+        <!-- Marzo -->
+        <option value="1">Marzo</option>
+        <!-- Aprile -->
+        <option value="1">Aprile</option>
+        <!-- Maggio -->
+        <option value="1">Maggio</option>
+        <!-- Giugno -->
+        <option value="1">Giugno</option>
+        <!-- Luglio -->
+        <option value="1">Luglio</option>
+        <!-- Agosto -->
+        <option value="1">Agosto</option>
+        <!-- Settembre -->
+        <option value="1">Settembre</option>
+        <!-- Marzo - Aprile -->
+        <option value="2">Marzo - Aprile</option>
+        <!-- Marzo - Maggio -->
+        <option value="3">Marzo - Maggio</option>
+        <!-- Marzo - Giugno -->
+        <option value="4">Marzo - Giugno</option>
+        <!-- Marzo - Luglio -->
+        <option value="5">Marzo - Luglio</option>
+        <!-- Marzo - Agosto -->
+        <option value="6">Marzo - Agosto</option>
+        <!-- Marzo - Settembre -->
+        <option value="7">Marzo - Settembre</option>
+        <!-- Aprile - Maggio -->
+        <option value="2">Aprile - Maggio</option>
+        <!-- Aprile - Giugno -->
+        <option value="3">Aprile - Giugno</option>
+        <!-- Aprile - Luglio -->
+        <option value="4">Aprile - Luglio</option>
+        <!-- Aprile - Agosto -->
+        <option value="5">Aprile - Agosto</option>
+        <!-- Aprile - Settembre -->
+        <option value="6">Aprile - Settembre</option>
+        <!-- Maggio - Giugno -->
+        <option value="2">Maggio - Giugno</option>
+        <!-- Maggio - Luglio -->
+        <option value="3">Maggio - Luglio</option>
+        <!-- Maggio - Agosto -->
+        <option value="4">Maggio - Agosto</option>
+        <!-- Maggio - Settembre -->
+        <option value="5">Maggio - Settembre</option>
+        <!-- Giugno - Luglio -->
+        <option value="2">Giugno - Luglio</option>
+        <!-- Giugno - Agosto -->
+        <option value="3">Giugno - Agosto</option>
+        <!-- Giugno - Settembre -->
+        <option value="4">Giugno - Settembre</option>
+        <!-- Luglio - Agosto -->
+        <option value="5">Luglio - Agosto</option>
+        <!-- Luglio - Settembre -->
+        <option value="6">Luglio - Settembre</option>
+        <!-- Agosto - Settembre -->
+        <option value="2">Agosto - Settembre</option>
+    </select>
+         <p>
+        <p>
+        <button name="invia">Invia</button>
+        <p>
+    <script>
+        <a href="index.html">Vai alla Home</a>
+    </script>
+      </form>      
+    </script>
+</body>
+</html>
+>>>>>>> 5e608a9c680e452d4a4d778903ca04f25ce5c78f
