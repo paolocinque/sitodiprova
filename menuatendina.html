@@ -13,14 +13,16 @@
 <body>
     <h1>Seleziona gli input e crea la tua polizza in pochi minuti!:</h1>
 
+    <form action="/calcola" method="POST">
+        <p>
     <!-- Menu a tendina per l'area geografica -->
-    <label for="areaGeografica">Area Geografica:</label>
-    <select id="areaGeografica">
-        <option value="Nord">Nord</option>
-        <option value="Centro">Centro</option>
-        <option value="Sud">Sud</option>
-    </select>
-
+           <label for="areaGeografica">Area Geografica:</label>
+           <select id="areaGeografica">
+               <option value="Nord">Nord</option>
+               <option value="Centro">Centro</option>
+               <option value="Sud">Sud</option>
+            </select>
+         <p>
     <!-- Menu a tendina per la tipologia di miele -->
     <label for="tipologiaMiele">Tipologia Miele:</label>
     <select id="tipologiaMiele">
