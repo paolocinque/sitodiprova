@@ -10,19 +10,21 @@
             color: white;
         }
 
-/* Media query per dispositivi con larghezza fino a 768px (es. smartphone) */
-@media (max-width: 768px) {
-  body {
-    /* Aggiusta lo sfondo per dispositivi più piccoli */
-    background-size: contain;
+@media (max-width: 600px) {
+  /* Stili per schermi con larghezza massima di 600px (es. smartphone) */
+  form {
+    width: 80%;
+  }
+
+  input, select, button {
+    width: 100%;
   }
 }
 
-/* Media query per dispositivi con larghezza da 769px a 1024px (es. tablet) */
-@media (min-width: 769px) and (max-width: 1024px) {
-  body {
-    /* Aggiusta lo sfondo per dispositivi di dimensioni medie */
-    background-size: cover;
+@media (min-width: 601px) and (max-width: 1024px) {
+  /* Stili per schermi con larghezza da 601px a 1024px (es. tablet e dispositivi di dimensioni medie) */
+  form {
+    width: 60%;
   }
 }
         
