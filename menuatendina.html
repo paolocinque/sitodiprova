@@ -9,6 +9,23 @@
             background-size: cover;
             color: white;
         }
+
+/* Media query per dispositivi con larghezza fino a 768px (es. smartphone) */
+@media (max-width: 768px) {
+  body {
+    /* Aggiusta lo sfondo per dispositivi più piccoli */
+    background-size: contain;
+  }
+}
+
+/* Media query per dispositivi con larghezza da 769px a 1024px (es. tablet) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    /* Aggiusta lo sfondo per dispositivi di dimensioni medie */
+    background-size: cover;
+  }
+}
+        
     </style>
 <body>
     <h1>Seleziona gli input e crea la tua polizza in pochi minuti!:</h1>
