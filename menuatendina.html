@@ -92,36 +92,5 @@
     <script>
         <a href="index.html">Vai alla Home</a>
     </script>
-
-    
-<!--QUA SI PRENDONO I DATI MESSI NEL MENU' A TENDINA E SI MANDANO A PYTHON -->
-    
-function calcolaRisultato() {
-            const periodoCopertura = document.getElementById('periodoCopertura').value;
-            const tipologiaMiele = document.getElementById('tipologiaMiele').value;
-            const areaGeografica = document.getElementById('areaGeografica').value;
-
-            const requestData = {
-                "periodoCopertura": periodoCopertura,
-                "tipologiaMiele": tipologiaMiele,
-                "areaGeografica": areaGeografica
-            };
-
-
-    
-    fetch('/calcola', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(requestData)
-            })
-            .then(response => response.json())
-            .then(data => {
-                const risultatoDiv = document.getElementById('risultato');  <!-- QUA SI PRENDE E SI RESTITUISCE IL VALORE CALCOLATO CON PYTHON ALLA PAGINA WEB-->
-                risultatoDiv.innerHTML = `Risultato: ${data.result}`;
-            })
-            .catch(error => console.error('Errore nella richiesta AJAX:', error));
-        }
 </body>
 </html>
