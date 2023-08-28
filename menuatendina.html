@@ -104,7 +104,10 @@
     <script>
         <a href="index.html">Vai alla Home</a>
     </script>
-      </form>      
+      </form>  
+    {% if prezzo %}
+    <h2>Risultato: {{ prezzo }}</h2>
+    {% endif %}
     </script>
 </body>
 </html>
